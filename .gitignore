@@ -2,6 +2,7 @@
 /.vscode/
 /*.iml
 .DS_Store
-
+/dist
 /target
 node_modules
+/build
