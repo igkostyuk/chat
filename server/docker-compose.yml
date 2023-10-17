@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  redis:
+    image: "redis:7-alpine3.18"
+    ports:
+      - 6379:6379
+  database:
+    image: "postgres:16-alpine3.18"
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=chat
+    volumes:
+      - database_data:/var/lib/postgresql/data
+volumes:
+  database_data:
+    driver: local

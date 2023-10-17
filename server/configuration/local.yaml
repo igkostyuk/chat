@@ -1,0 +1,13 @@
+application:
+  host: 127.0.0.1
+  base_url: "http://127.0.0.1"
+database:
+  require_ssl: false
+auth:
+  eddsa_private_key_pem: "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tTUM0Q0FRQXdCUVlESzJWd0JDSUVJQkd5WHZBRERvYlJBdmJ4K2NIU29JLzJMVWNJYnhVTmlBZVArS0JEQVZXTi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0="
+  eddsa_public_key_pem: "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1NQ293QlFZREsyVndBeUVBRG5VOVN4NU1BcVdIeDNZSUJweFJiT09nS0FwR0hwb0Fsb3kvcGFyMGlJaz0tLS0tLUVORCBQVUJMSUMgS0VZLS0tLS0="
+  access_toked_duration: 3600
+  refresh_toked_duration: 36000
+redis:
+  host: 127.0.0.1
+  port: 6379
